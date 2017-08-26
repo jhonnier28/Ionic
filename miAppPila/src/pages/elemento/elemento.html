@@ -1,13 +1,15 @@
 <ion-header>
     <ion-navbar>
       <ion-title>
-        Ionic Blank
+        BIENVENIDO 
       </ion-title>
-    </ion-navbar>
+      </ion-navbar>
   </ion-header>
-  
-  <ion-content padding>
-    Pagina numero: {{numeroPagina}}.
-    <button ion-button full [navPush]="elementoPagina" [navParams]="{numero: numeroPagina + 1}" >Ir a Página</button>
+
+  <ion-content>
+    <p>SEÑOR {{usuario}}</p>
+    <p>numero de intentos {{contador}}</p>
+    <hr>
     <button ion-button full navPop>Volver</button>
   </ion-content>
+  

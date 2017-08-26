@@ -1,15 +1,14 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-  <button ion-button [navPush]="elementoPagina" [navParams]="{numero:1}">Ir a Página</button>
-</ion-content>
+  <ion-content padding>
+    <ion-item>
+      <ion-label floating>Usuario</ion-label>
+      <ion-input type="text" #usuario></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="text" #contrasenia></ion-input>
+    </ion-item>
+
+    <button ion-button full (click)="validar(usuario.value, contrasenia.value)" >Iniciar sesion</button>
+  </ion-content>

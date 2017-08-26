@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import {ElementoPage} from '../pages/elemento/elemento';
+import {PageError} from '../pages/pageError/pageError';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -13,7 +14,8 @@ import { HomePage } from '../pages/home/home';
   declarations: [
     MyApp,
     HomePage,
-    ElementoPage
+    ElementoPage,
+    PageError
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    ElementoPage
+    ElementoPage,
+    PageError
   ],
   providers: [
     StatusBar,
