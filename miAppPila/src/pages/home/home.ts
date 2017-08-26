@@ -13,7 +13,7 @@ export class HomePage {
   }
 
   agregarPagina(){
-    this.navCtrl.push(ElementoPage);
+    this.navCtrl.push(ElementoPage,1);
 
   }
 
