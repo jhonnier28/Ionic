@@ -7,17 +7,12 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ElementoPage {
     numeroPagina:number;
+    elementoPagina= ElementoPage;
 
 
     constructor(private navCtrl: NavController, private navParams: NavParams) {
-        this.numeroPagina = navParams.data;
+        this.numeroPagina = navParams.get('numero');
     }
 
-    volverPagina(){
-            this.navCtrl.pop();
-    }
 
-    agregarPagina(){
-            this.navCtrl.push(ElementoPage, this.numeroPagina+1);
-    }
 }

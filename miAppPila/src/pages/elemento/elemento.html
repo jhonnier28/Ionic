@@ -8,6 +8,6 @@
   
   <ion-content padding>
     Pagina numero: {{numeroPagina}}.
-    <button ion-button full (click)="agregarPagina()">Ir a Página</button>
-    <button ion-button full (click)="volverPagina()">Volver</button>
+    <button ion-button full [navPush]="elementoPagina" [navParams]="{numero: numeroPagina + 1}" >Ir a Página</button>
+    <button ion-button full navPop>Volver</button>
   </ion-content>

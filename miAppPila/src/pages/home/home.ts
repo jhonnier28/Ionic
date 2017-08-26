@@ -7,14 +7,8 @@ import {ElementoPage} from '../elemento/elemento'
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  elementoPagina=ElementoPage;
   constructor(public navCtrl: NavController) {
 
   }
-
-  agregarPagina(){
-    this.navCtrl.push(ElementoPage,1);
-
-  }
-
 }
