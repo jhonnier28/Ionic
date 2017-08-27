@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides #carrusel>
+    <ion-slide *ngFor='let slide of slides; let i=index'>
+      <img [src]="slide.imagen" />
+      <h2>{{slide.titulo}}</h2>
+      <p>{{slide.texto}}</p>
+      <button *ngIf="!carrusel.isBeginning()" ion-button full (click)="anterior()">Anterior</button>
+      <button ion-button full (click)="siguiente()">Siguiente</button>
+    </ion-slide>
+    <ion-slide>
+        <img src="assets/images/img-4.jpg" />
+        <h2>HTML 5</h2>
+        <p>texto 4 de prueba</p>
+        <button ion-button full (click)="iniciar()">Inicio</button>
+      </ion-slide>
+  </ion-slides>
+</ion-content>
